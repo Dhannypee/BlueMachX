@@ -1,1 +1,3 @@
+Development of Ship Maneuverability Simulator Software.
+Development of a numerical method to compute and validate the standard procedures for ship maneuverability based on the ship hydrodynamic coefficient. For this, the software will combine the equations of motion in the three degrees of freedom surge X, sway Y and yaw ψ. 
 
