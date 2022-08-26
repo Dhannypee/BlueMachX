@@ -1,3 +1,5 @@
-Welcome to Mano_X
-The software is developed to compute and validate the standard procedures for ship maneuverability based on the ship non-linear hydrodynamic coefficient according to the standard IMO rules featuring the turning circle and zigzag test.
-The software combines the equations of motion in the three degrees of freedom surge X sway Y and yaw N. Also, taking into account the effect of shallow water on ship maneuvering capabilities is also considered.
+#Welcome to Mano_X
+The software is developed to compute and validate the standard procedures for ship maneuverability according to the standard IMO rules featuring the turning circle and zigzag test.
+The software combines the equations of motion in the three degrees of freedom surge X sway Y and yaw N based on the ship non-linear hydrodynamic coefficient. Also, taking into account the effect of shallow water on ship maneuvering capabilities is also considered.
+
+**Instructions**
