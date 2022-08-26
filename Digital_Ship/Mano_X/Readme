@@ -17,7 +17,7 @@ For this, the software combines the equations of motion in the three degrees of 
 12. Use the Calculate button to compute the select maneuvering option. 
 13. User can export the result to excel sheet by first creating and saving a blank sheet. Close the sheet before pressing generate data. 
 14. Wait for 15secs for the program to write the datas and plots to the created excel sheet. 
-15. User can access then open the excel sheet.
+15. User can access the excel sheet after generating the rseult and plot.
 
 **Note** 
 Incase of any problem contact admin on d.akinmulewo@studenti.unina.it or akinmulewodaniel@gmail.com
