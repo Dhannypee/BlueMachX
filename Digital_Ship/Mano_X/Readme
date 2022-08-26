@@ -1,5 +1,24 @@
-#Welcome to Mano_X
+Welcome to Mano_X
 The software is developed to compute and validate the standard procedures for ship maneuverability according to the standard IMO rules featuring the turning circle and zigzag test.
-The software combines the equations of motion in the three degrees of freedom surge X sway Y and yaw N based on the ship non-linear hydrodynamic coefficient. Also, taking into account the effect of shallow water on ship maneuvering capabilities is also considered.
+For this, the software combines the equations of motion in the three degrees of freedom surge X sway Y and yaw N based on the ship non-linear hydrodynamic coefficient. Also, taking into account the effect of shallow water on ship maneuvering capabilities is also considered.
 
 **Instructions**
+1. Download and Install Mano_X.exe 
+2. Navigate and open the installed program.
+3. The first step is to navigate to ship parameter tab to input ship details and hydrodynamic coefficients by clicking Custom in the ship type drop down box. 
+4. User can also acces the pre-programmed datas for the three different ship models: Ferry Ship, Tanker Ship and Container Ship. The ship parameters and hydrodynamic coefficients will be automatically uploaded.
+5. After input ship details and hydrodynamic coefficients, navigate to the Analysis tab.
+6. Select the type of maneuver you will prefer to perfom. Turning Circle, ZigZag (10/10, 20/20) test.
+7. Select the water depth. For Shallow water, type in the shallow water depth > 1 and press enter. The unit is in meters.
+8. User can either input Froude number, the initial ship speed before maneuvering will be automatically generated or input the initial ship speed. 
+9. Input the time for the maneuver in the minutes field, and the time step in the ΔT field and press enter. 
+10. Indicate the rudder angle in degrees and the rate of rudder change in degree/secs and press enter. 
+11. Input propeller details and press enter. 
+12. Use the Calculate button to compute the select maneuvering option. 
+13. User can export the result to excel sheet by first creating and saving a blank sheet. Close the sheet before pressing generate data. 
+14. Wait for 15secs for the program to write the datas and plots to the created excel sheet. 
+15. User can access then open the excel sheet.
+
+**Note** 
+Incase of any problem contact admin on d.akinmulewo@studenti.unina.it or akinmulewodaniel@gmail.com
+
