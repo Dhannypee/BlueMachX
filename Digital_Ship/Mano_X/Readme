@@ -11,14 +11,14 @@ For this, the software combines the equations of motion in the three degrees of 
 5. After input ship details and hydrodynamic coefficients, navigate to the Analysis tab.
 6. Select the type of maneuver you will prefer to perfom. Turning Circle, ZigZag (10/10, 20/20) test.
 7. Select the water depth. For Shallow water, type in the shallow water depth > 1 and press enter. The unit is in meters.
-8. User can either input Froude number, the initial ship speed before maneuvering will be automatically generated or input the initial ship speed. 
+8. User can either input Froude number, the initial ship speed before maneuvering will be automatically calculated or input the initial ship speed. 
 9. Input the time for the maneuver in the minutes field, and the time step in the ΔT field and press enter. 
 10. Indicate the rudder angle in degrees and the rate of rudder change in degree/secs and press enter. 
 11. Input propeller details and press enter. 
-12. Use the Calculate button to compute the select maneuvering option. 
-13. User can export the result to excel sheet by first creating and saving a blank sheet. Close the sheet before pressing generate data. 
+12. Use the Calculate button to compute the selected maneuvering option. 
+13. User can export the result to excel sheet by first creating and saving a blank sheet. Close the sheet before clicking on generate data. 
 14. Wait for 15secs for the program to write the datas and plots to the created excel sheet. 
-15. User can access the excel sheet after generating the rseult and plot.
+15. User can access the excel sheet after generating the result and plot.
 
 **Note** 
 Incase of any problem contact admin on d.akinmulewo@studenti.unina.it or akinmulewodaniel@gmail.com
