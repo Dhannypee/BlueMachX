@@ -1,0 +1,2 @@
+The project is aimed towards the development of autonomous control and mission-based navigation for BlueROV2 by integrating a color detection algorithm using python OpenCV, ROS and Gazebo. 
+The control system consists of a PID speed controller and ardupilot controller to navigate the BlueROV close to the identified object while performing the task.
