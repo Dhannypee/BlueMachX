@@ -1,0 +1,83 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.x                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volVectorField;
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   uniform (0 0 0);
+
+boundaryField
+{
+    WaterInlet
+    {
+        type            codedFixedValue;
+        value           uniform (0 0 0);
+        
+        name		OscilattoryMotionFixedValue;  //name user choose to call the code
+        
+        
+        code 
+        #{
+		const scalar pi = constant::mathematical::pi;
+          	const scalar t = this->db().time().value();
+          	const scalar A = 1;		//Amplitude
+          	const scalar lamda = 0.1;		//wavelength
+          	const scalar k = (2*pi)/lamda;		//Wave number
+          	const scalar phase = 0;		//phase
+          	const vector g(0, -9.81, 0);		//gravity
+          	const scalar w = sqrt(k*mag(g));		//omega
+          	const vector U_0(1, 0, 0);
+          	operator == (U_0*(A*sin(w*t))); 
+          	
+          	      
+        #};
+    }
+
+    AirInlet
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+
+    Outlet
+    {
+        type            inletOutlet;
+        inletValue      uniform (0 0 0);
+       	value           uniform (0 0 0);
+    }
+
+    Top
+    {
+        type            pressureInletOutletVelocity;
+        value           uniform (0 0 0);
+    }
+
+    Bottom
+    {
+        type            slip;
+    }
+
+    Back
+    {
+        type            empty;
+    }
+
+    Front
+    {
+        type            empty;
+    }
+}
+
+// ************************************************************************* //
